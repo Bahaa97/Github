@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="message_loading">جارى التحميل...</string>
+    <string name="movie">الافلام</string>
+    <string name="favourite">المفضلة</string>
+    <string name="search">البحث</string>
+    <string name="profile">القائمة</string>    <string name="msg_no_internet">يوجد خطأ بالأتصال بالأنترنت</string>
+    <string name="msg_internet_note">يرجى مراجعة اتصال الشبكة واعدادات الانترنت
+واعادة المحاولة مرة اخري</string>
+    <string name="label_try_again">المحاولة مجددا</string>
+    <string name="movies">Movies</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="latest">Latest</string>
+    <string name="up_comping">Up Coming</string>
+    <string name="repos">Repos</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="language">language</string>
+    <string name="watchers">watchers</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="message_loading">Loading....</string>
+    <string name="movie">Movie</string>
+    <string name="favourite">Favourite</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="msg_no_internet">There is an error connecting to the Internet</string>
+    <string name="msg_internet_note">Please check your network connection and Internet settings
+And try again</string>
+    <string name="label_try_again">Try Again</string>
+    <string name="label_check_internet">Check your internet please</string>
+    <string name="movies">Movies</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">Popular</string>
+    <string name="latest">Latest</string>
+    <string name="up_comping">Up Coming</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="repos">Repos</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="admin">Admin</string>
+    <string name="language">language</string>
+    <string name="watchers">watchers</string>
+</resources>

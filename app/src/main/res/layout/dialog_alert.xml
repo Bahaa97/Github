@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    app:cardBackgroundColor="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_25sdp">
+
+    <ImageView
+        android:elevation="@dimen/_8sdp"
+        android:id="@+id/imageIcon"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="@dimen/_25sdp">
+
+        <LinearLayout
+            android:background="#fefefe"
+            android:padding="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:minWidth="@dimen/_300sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:text="Alert Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/txtMessage"
+                android:padding="@dimen/_15sdp"
+                android:text="Test Dialog Content please for me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:elevation="@dimen/_8sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"/>
+
+        <Button
+            android:id="@+id/btnNO"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

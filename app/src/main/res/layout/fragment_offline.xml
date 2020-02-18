@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="offlineViewModle"
+            type="com.bahaa.github.ui.fragment.offline.OfflineViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/view_fake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50sdp">
+                <ImageView
+                    android:id="@+id/img_no_data"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:src="@drawable/img_no_network"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_no_favourite_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/view_fake"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:lines="2"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:text="@string/msg_no_internet"/>
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/msg_internet_note"
+                android:layout_below="@+id/tv_no_favourite_data"/>
+            <TextView
+                android:id="@+id/tv_try_again"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_note"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/color_primary_100dp_bg"
+                android:text="@string/label_try_again"
+                android:textColor="@color/white"
+                android:onClick="@{() -> offlineViewModle.onTryAgain()}"
+                android:padding="@dimen/_5sdp"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

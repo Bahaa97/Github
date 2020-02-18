@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="RepoItem"
+            type="com.bahaa.github.ui.fragment.adapter.repoAdapter.ReposViewModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        android:onClick="@{()-> RepoItem.onItemClick()}"
+        app:cardElevation="@dimen/_2sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_90sdp"
+                android:scaleType="fitXY"
+                tools:imageUrl="@{RepoItem.imageObservable}"
+                android:layout_height="@dimen/_110sdp"/>
+            <LinearLayout
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/name"
+
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hacen_maghreb_lt"
+                        android:lines="1"
+                        android:text="@{RepoItem.repoNameObservable}"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/type"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hacen_maghreb_lt"
+                        android:lines="1"
+                        android:text="@{RepoItem.repoTypeObservable}"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hacen_maghreb_lt"
+                        android:lines="1"
+                        android:text="@{RepoItem.repoAdminObservable}"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/language"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hacen_maghreb_lt"
+                        android:lines="1"
+                        android:text="@{RepoItem.repoLanguageObservable}"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/watchers"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hacen_maghreb_lt"
+                        android:lines="1"
+                        android:text="@{RepoItem.repoWatcherObservable}"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
